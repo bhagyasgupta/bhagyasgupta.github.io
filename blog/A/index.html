@@ -31,12 +31,25 @@
             text-decoration: underline;
         }
 
+        .article-header {
+            margin-bottom: 40px;
+        }
+
         h1 {
-            margin: 0 0 40px;
+            margin: 0;
 
             font-size: 40px;
             font-weight: normal;
             line-height: 1.25;
+        }
+
+        .publication-date {
+            display: block;
+            margin-top: 12px;
+            text-align: right;
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         .article {
@@ -71,9 +84,12 @@
                 margin-bottom: 35px;
             }
 
+            .article-header {
+                margin-bottom: 30px;
+            }
+
             h1 {
                 font-size: 32px;
-                margin-bottom: 30px;
             }
 
             .article {
@@ -90,7 +106,10 @@
         <a class="back-link" href="/blog/">← Blog</a>
 
         <article>
-            <h1>Atitle</h1>
+            <header class="article-header">
+                <h1>Atitle</h1>
+                <time class="publication-date" datetime="2026-09-11">11 Sep 2026</time>
+            </header>
 
             <div class="article">
                 <p>Aparagraph1</p>
