@@ -1,26 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atitle — Bhagyashree Gupta</title>
 
     <style>
+        body {
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 0 25px;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            background: #f7f5f0;
+            color: #222;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 50px;
+
+            color: #666;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
         h1 {
+            margin: 0 0 40px;
+
             font-size: 40px;
+            font-weight: normal;
+            line-height: 1.25;
         }
 
         .article {
-            white-space: pre-wrap;
+            font-size: 18px;
+            line-height: 1.8;
+            overflow-wrap: break-word;
+        }
+
+        .article p {
+            margin: 0 0 1.4em;
+        }
+
+        .article a {
+            color: #222;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .article a:hover {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .back-link {
+                margin-bottom: 35px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            .article {
+                font-size: 17px;
+                line-height: 1.75;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Atitle</h1>
+    <main>
+        <a class="back-link" href="/blog/">← Blog</a>
 
-    <div class="article"><p>Aparagraph1</p>
+        <article>
+            <h1>Atitle</h1>
+
+            <div class="article">
+                <p>Aparagraph1</p>
 <p>Aparagraph2</p>
-<p>Aparagraph3</p></div>
+<p>Aparagraph3</p>
+            </div>
+        </article>
+    </main>
 
 </body>
+
 </html>
